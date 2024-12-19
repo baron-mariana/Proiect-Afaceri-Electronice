@@ -8,7 +8,15 @@
     box-sizing: border-box;
     
 }
+.magazin{ background-color: rgb(0, 183, 255);
+  color: white;
+  text-align: center;
+  height: 100px;
+  font-size: 30px;
+  font-style: italic;
+  padding-top: 30px;
 
+}
 .navbarWrapper {
     border-bottom: 1px solid #dddddd;
     padding: 10px;
