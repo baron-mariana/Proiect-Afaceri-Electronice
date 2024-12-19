@@ -1,25 +1,25 @@
 export const sortingOptions = [
     {
         id: 1,
-        value: "Price: Low to High",
+        value: "Pret crescator",
         key: "price",
         order: "asc",
     },
     {
         id: 2,
-        value: "Price: High to Low",
+        value: "Pret descrescator",
         key: "price",
         order: "desc",
     },
     {
         id: 3,
-        value: "Rating: Low to High",
+        value: "Cele mai noi",
         key: "rating",
         order: "asc",
     },
     {
         id: 4,
-        value: "Rating: High to Low",
+        value: "Cele mai populare",
         key: "rating",
         order: "desc",
     },

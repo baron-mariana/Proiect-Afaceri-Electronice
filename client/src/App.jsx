@@ -7,9 +7,11 @@ import Profile from "./pages/Profile";
 import { useSelector } from "react-redux";
 import Register from "./pages/Register";
 import Cart from "./components/Cart";
+import CheckoutPage from "./components/CheckoutPage"; // Importăm pagina de checkout
+import React from "react";
 
 function App() {
-  const {checkTokenLoading, loggedIn} = useSelector((state) => state.global);
+  const { checkTokenLoading, loggedIn } = useSelector((state) => state.global);
 
   useCheckToken();
 
@@ -25,6 +27,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckoutPage />} /> {/* Adăugăm ruta de checkout */}
             <Route
               path="/profile"
               element={loggedIn ? <Profile /> : <Navigate to="/login" />}

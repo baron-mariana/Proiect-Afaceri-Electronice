@@ -18,12 +18,12 @@ function Navbar() {
 
   return (
     <div className="navbarWrapper">
-      <Link to="/">Homepage</Link>
+      <Link to="/">Acasa</Link>
 
       {loggedIn ? (
         <>
           <Link to="/" onClick={() => logoutUser()}>
-            Logout
+            Delogare
           </Link>
           <Link to="/cart">
             <i className="fas fa-shopping-cart"></i>
